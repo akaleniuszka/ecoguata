@@ -1,0 +1,53 @@
+{
+    "name": "jn-jairo/laravel-ngrok",
+    "description": "Share Laravel application with ngrok.",
+    "keywords": [
+        "jn-jairo",
+        "laravel-ngrok"
+    ],
+    "homepage": "https://github.com/jn-jairo/laravel-ngrok",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jairo Correa",
+            "email": "jn.j41r0@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.3|^7.0",
+        "illuminate/console": "^5.8|^6.0|^7.0",
+        "illuminate/http": "^5.8|^6.0|^7.0",
+        "illuminate/pagination": "^5.8|^6.0|^7.0",
+        "illuminate/routing": "^5.8|^6.0|^7.0",
+        "illuminate/support": "^5.8|^6.0|^7.0",
+        "symfony/process": "^4.0|^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0|^5.0",
+        "phpunit/phpunit": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "JnJairo\\Laravel\\Ngrok\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JnJairo\\Laravel\\Ngrok\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JnJairo\\Laravel\\Ngrok\\NgrokServiceProvider"
+            ]
+        }
+    }
+}
