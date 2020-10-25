@@ -10,6 +10,13 @@
             <div class="col-md-12" style="background: url(/img/landscape.jpg); background-size: cover; background-repeat: no-repeat;">
                 @include('partials.user')
             </div>
+            <div class="col-md-4 mt-1 mx-auto">
+                <friendship-btn
+                    dusk="request-friendship"
+                    class="btn btn-primary btn-block"
+                    :recipient="{{ $user }}"
+                ></friendship-btn>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">

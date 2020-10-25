@@ -9,7 +9,11 @@
         <div class="row">
             @forelse ($friends as $friend)
                 <div class="col-md-3">
-                    @include('partials.user', ['user' => $friend])
+                    <div class="card border-0 bg-light shadow-sm">
+                        <div class="card-body">
+                            @include('partials.user', ['user' => $friend])
+                        </div>
+                    </div>
                 </div>
             @empty
                 {{ __('You don\'t have any friends yet!') }}
